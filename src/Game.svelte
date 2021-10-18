@@ -246,6 +246,7 @@
   <input type="range" name="speed" min="1" max="10" bind:value={speed} disabled={isPlaying}/>
 </p>
 
+<!-- The game screen is actually one big animated SVG -->
 <svg>
   <g class="stave" transform="translate(0,160)" stroke="#aaa">
     {#each [0,1,2,3,4] as line}

@@ -7,11 +7,13 @@
 	let init = false;
 	let midiInputs = false;
 
+	// Click handler to initialize Tone.js.
 	const handleStart = async () => {
 		await Tone.start();
 		init = true;
 	}
 
+	// Enable WebMidi on component mount (if available).
 	onMount(() => {
 		WebMidi.enable(err => {
 			if (err) {
@@ -23,6 +25,7 @@
 		});
 	});
 </script>
+
 
 <header>
 	{#if midiInputs}

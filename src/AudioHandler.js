@@ -1,3 +1,8 @@
+/**
+ * Audio handler helper class.
+ *
+ * Sets up the various sounds and note mappings.
+ */
 class AudioHandler {
   constructor(Tone) {
     this.piano = new Tone.Synth().toDestination();
