@@ -28,6 +28,7 @@ npm install
 Then fire up the app...
 
 ```bash
+npm run build
 npm start
 ```
 
